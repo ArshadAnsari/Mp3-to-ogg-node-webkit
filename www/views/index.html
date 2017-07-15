@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Audio Convertor</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="../directory.js"></script>
+	<script>
+		function onSubmit()
+		{
+			if(document.getElementById('path').value.trim() != "")	
+				Convert(document.getElementById('path').value)
+		}
+	</script> 
+	<style>
+		.convert-btn {
+			color: #ffffff;
+			background-color: #F89406;
+			border: none;
+			margin : auto;
+		}
+		.panel{
+			text-align : center
+		}
+	</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>Audio Convertor</h2>
+            <input class="form-control" type="text" id="path"></input></br>
+            <button class="btn btn-lg convert-btn" type="button" onclick="onSubmit()">Convert</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
